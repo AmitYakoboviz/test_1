@@ -28,6 +28,21 @@
             transform: translate(-50%, -50%);
             text-align: center;
             font-size: 2em;
+            animation: shine 2s infinite;
+        }
+
+        @keyframes shine {
+            0% {
+                color: white;
+            }
+
+            50% {
+                color: yellow;
+            }
+
+            100% {
+                color: white;
+            }
         }
 
         canvas {
@@ -39,7 +54,7 @@
 </head>
 
 <body>
-    <div id="message">Welcome to the Fireworks Show Yariv!</div>
+    <div id="message">Welcome Yariv!</div>
     <canvas id="fireworksCanvas"></canvas>
     <script>
         const canvas = document.getElementById('fireworksCanvas');
